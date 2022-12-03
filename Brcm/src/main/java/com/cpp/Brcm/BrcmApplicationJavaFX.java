@@ -3,6 +3,8 @@
   import javafx.application.Application; 
   import javafx.stage.Stage; 
   import javafx.application.Platform;
+  import javafx.scene.Parent;
+  import javafx.scene.Scene;
   
   import org.springframework.boot.builder.SpringApplicationBuilder; 
   import org.springframework.context.ApplicationEvent; 
@@ -32,7 +34,9 @@
   }
   
   
-  
+  public static void main(String[] args) {
+		launch(args);
+	}
   
   
   }
