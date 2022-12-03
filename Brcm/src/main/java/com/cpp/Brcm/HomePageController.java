@@ -1,4 +1,4 @@
-package com.cpp.Brcm.controllers;
+package com.cpp.Brcm;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.stereotype.Component;
 
@@ -11,21 +11,9 @@ import javafx.stage.Stage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Component
-@FxmlView("HomePage.fxml")
+
+
 public class HomePageController {
-	private Stage stage;
 
-    @FXML
-    private VBox dialog;
-
-    @FXML
-    public void initialize() { 
-        this.stage = new Stage();
-        stage.setScene(new Scene(dialog));
-    }
-
-    public void show() {
-        stage.show(); 
-    }
 }
+

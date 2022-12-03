@@ -6,7 +6,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/2.2" 
+fx:controller = "com.cpp.Brcm.HomePageController">
   <!-- TODO Add Nodes -->
   <center>
     <AnchorPane prefHeight="200.0" prefWidth="800.0">
