@@ -11,6 +11,7 @@ import java.net.URL;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
@@ -24,9 +25,11 @@ public class PrimaryStageInitializer implements ApplicationListener<StageReadyEv
     @Value("classpath:/HomePageController.fxml")
 	private Resource homePageResource;
 	private String applicationTitle;
+	private ApplicationContext applicationContext;
 	
-	public PrimaryStageInitializer(@Value("Bronco Recreational Complex Management") String applicationTitle) {
+	public PrimaryStageInitializer(@Value("${spring.application.ui.title}") String applicationTitle, ApplicationContext applicationContext) {
 		this.applicationTitle = applicationTitle;
+		this.applicationContext = applicationContext;
 	}
 
     //@Autowired
@@ -41,6 +44,7 @@ public class PrimaryStageInitializer implements ApplicationListener<StageReadyEv
         try {
 			FXMLLoader fxmlLoader = new FXMLLoader(homePageResource.getURL());
 		
+			//fxmlLoader.setControllerFactory(aClass -> applicationContext.getBean(aClass));
         Parent parent = fxmlLoader.load();
 		stage.setScene(new Scene(parent, 800, 600));
 		stage.setTitle(applicationTitle);
