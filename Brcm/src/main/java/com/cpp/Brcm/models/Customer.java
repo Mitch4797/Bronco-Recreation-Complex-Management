@@ -1,8 +1,9 @@
 package com.cpp.Brcm.models;
 
 import java.sql.Date;
+import java.util.List;
 
-
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.DiscriminatorType;
@@ -14,6 +15,7 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 
@@ -42,6 +44,9 @@ public class Customer {
 	protected Address address;
 
 	private int phone;
+	
+	@OneToMany(mappedBy = "customer", cascade = { CascadeType.PERSIST })
+	private List<Order> orders;
 
 	
 
@@ -87,6 +92,9 @@ public class Customer {
 		return address;
 	}
 
+	public List<Order> getOrders() {
+		return orders;
+	}
 
 	/*
 	 * public CustType getType() { return type; }
