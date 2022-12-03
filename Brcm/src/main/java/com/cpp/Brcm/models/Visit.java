@@ -19,8 +19,8 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "orders")
-public class Order {
+@Table(name = "visits")
+public class Visit {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -43,17 +43,17 @@ public class Order {
 
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
-	private OrderStatus status;
+	private VisitStatus status;
 
 	public int activityCount() {
 		return activities.size();
 	}
 
-	public Order() {
+	public Visit() {
 	}
 
-	public Order(Customer customer, List<Activity> activities, Timestamp datetime,
-					BigDecimal price, OrderStatus status) {
+	public Visit(Customer customer, List<Activity> activities, Timestamp datetime,
+					BigDecimal price, VisitStatus status) {
 		this.customer = customer;
 		this.activities = activities;
 		this.datetime = datetime;
@@ -77,7 +77,7 @@ public class Order {
 		return totalAfterDiscount;
 	}
 
-	public OrderStatus getStatus() {
+	public VisitStatus getStatus() {
 		return status;
 	}
 }

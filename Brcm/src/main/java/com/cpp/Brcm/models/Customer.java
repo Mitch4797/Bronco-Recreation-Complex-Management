@@ -46,7 +46,7 @@ public class Customer {
 	private int phone;
 	
 	@OneToMany(mappedBy = "customer", cascade = { CascadeType.PERSIST })
-	private List<Order> orders;
+	private List<Visit> orders;
 
 	
 
@@ -92,7 +92,7 @@ public class Customer {
 		return address;
 	}
 
-	public List<Order> getOrders() {
+	public List<Visit> getOrders() {
 		return orders;
 	}
 

@@ -37,7 +37,7 @@ public class Activity {
 	@ManyToMany(cascade = { CascadeType.PERSIST })
 	@JoinTable(name = "activity_orders", joinColumns = @JoinColumn(name = "activity_id"),
 		inverseJoinColumns = @JoinColumn(name = "order_id"))
-	private List<Order> orders_used_in;
+	private List<Visit> orders_used_in;
 
 	public Activity() {
 	}
@@ -59,7 +59,7 @@ public class Activity {
 		return priceHistory;
 	}
 
-	public List<Order> getOrders_used_in() {
+	public List<Visit> getOrders_used_in() {
 		return orders_used_in;
 	}
 
