@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.RecieptController">
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -21,7 +20,7 @@
             <Text layoutX="478.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visit Total:" />
             <Text layoutX="484.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount:" />
             <Text layoutX="411.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total after Discount:" />
-            <Button layoutX="580.0" layoutY="347.0" mnemonicParsing="false" text="Home" />
+            <Button layoutX="580.0" layoutY="347.0" mnemonicParsing="false" onAction="#HomebuttonClicked" text="Home" />
          </children>
       </Pane>
    </center>

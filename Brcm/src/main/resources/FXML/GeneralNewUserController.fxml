@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.GeneralNewUserController">
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -18,9 +17,9 @@
             <Text layoutX="46.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
             <Text layoutX="427.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bronco ID" />
             <Text layoutX="460.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select based on your profession" />
-            <Button layoutX="327.0" layoutY="468.0" mnemonicParsing="false" text="Student" />
-            <Button layoutX="433.0" layoutY="468.0" mnemonicParsing="false" text="Professor" />
-            <Button layoutX="566.0" layoutY="468.0" mnemonicParsing="false" text="Student Professor" />
+            <Button layoutX="327.0" layoutY="468.0" mnemonicParsing="false" onAction="#StudentbuttonClicked" text="Student" />
+            <Button layoutX="433.0" layoutY="468.0" mnemonicParsing="false" onAction="#ProfessorbuttonClicked" text="Professor" />
+            <Button layoutX="566.0" layoutY="468.0" mnemonicParsing="false" onAction="#StudentProfessorbuttonClicked" text="Student Professor" />
             <TextField layoutX="167.0" layoutY="122.0" />
             <TextField layoutX="167.0" layoutY="177.0" />
             <TextField layoutX="515.0" layoutY="177.0" />

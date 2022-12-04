@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.MyVisitsController">
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -19,9 +18,8 @@
                 <TableColumn prefWidth="231.0" text="Timestamp" />
               </columns>
             </TableView>
-            <Button layoutX="221.0" layoutY="479.0" mnemonicParsing="false" text="Back" />
-            <Button layoutX="382.0" layoutY="479.0" mnemonicParsing="false" text="View Reciept" />
-            <Button layoutX="549.0" layoutY="479.0" mnemonicParsing="false" text="Home" />
+            <Button layoutX="264.0" layoutY="479.0" mnemonicParsing="false" onAction="#ViewRecieptbuttonClicked" text="View Reciept" />
+            <Button layoutX="474.0" layoutY="479.0" mnemonicParsing="false" onAction="#HomebuttonClicked" text="Home" />
          </children>
       </Pane>
    </center>

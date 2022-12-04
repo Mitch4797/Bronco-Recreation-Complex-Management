@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.StudentNewUserController">
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -20,8 +19,8 @@
             <TextField layoutX="166.0" layoutY="172.0" />
             <TextField layoutX="561.0" layoutY="105.0" />
             <TextField layoutX="494.0" layoutY="172.0" />
-            <Button layoutX="397.0" layoutY="428.0" mnemonicParsing="false" text="Register" />
-            <Button layoutX="580.0" layoutY="428.0" mnemonicParsing="false" text="Home" />
+            <Button layoutX="397.0" layoutY="428.0" mnemonicParsing="false" onAction="#RegisterbuttonClicked" text="Register" />
+            <Button layoutX="580.0" layoutY="428.0" mnemonicParsing="false" onAction="#HomebuttonClicked" text="Home" />
          </children>
       </Pane>
    </center>

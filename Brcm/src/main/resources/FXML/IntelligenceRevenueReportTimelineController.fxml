@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.IntelligenceRevenueReportTimelineController">
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -16,8 +15,8 @@
             <Text layoutX="345.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" />
             <TextField layoutX="151.0" layoutY="105.0" />
             <TextField layoutX="376.0" layoutY="105.0" />
-            <Button layoutX="320.0" layoutY="263.0" mnemonicParsing="false" text="Generate Report" />
-            <Button layoutX="572.0" layoutY="451.0" mnemonicParsing="false" text="Home" />
+            <Button layoutX="320.0" layoutY="263.0" mnemonicParsing="false" onAction="#GenerateReportbuttonClicked" text="Generate Report" />
+            <Button layoutX="572.0" layoutY="451.0" mnemonicParsing="false" onAction="#HomebuttonClicked" text="Home" />
          </children>
       </Pane>
    </center>

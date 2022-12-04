@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.IntelligenceRevenueReportController">
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
@@ -17,7 +16,7 @@
             <Text layoutX="439.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Number of Visits:" />
             <Text layoutX="439.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unique Visitors:" />
             <Text layoutX="439.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue:" />
-            <Button layoutX="551.0" layoutY="468.0" mnemonicParsing="false" text="Home" />
+            <Button layoutX="551.0" layoutY="468.0" mnemonicParsing="false" onAction="#HomebuttonClicked" text="Home" />
             <TableView layoutX="48.0" layoutY="151.0" prefHeight="392.0" prefWidth="301.0">
               <columns>
                 <TableColumn prefWidth="179.0" text="Activity" />

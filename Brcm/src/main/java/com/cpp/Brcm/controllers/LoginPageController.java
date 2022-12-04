@@ -30,5 +30,14 @@ public class LoginPageController {
 		 stage.setScene(scene);
 		 stage.show();
 	}
+	
+	public void LoginbuttonClicked(ActionEvent event) throws IOException {
+		 root = FXMLLoader.load(getClass().getResource("/FXML/HomePageController.fxml"));
+		 stage =(Stage) ((Node) event.getSource()).getScene().getWindow();
+		 scene = new Scene(root);
+		 stage.setScene(scene);
+		 stage.show();
+	}
+
 
 }
