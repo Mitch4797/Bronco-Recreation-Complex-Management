@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/2.2"
+fx:controller = "com.cpp.Brcm.controllers.LoginPageController">
+  <!-- TODO Add Nodes -->
+  <top>
+    <Pane prefHeight="600.0" prefWidth="800.0">
+      <children>
+        <Text layoutX="242.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bronco ID:" />
+        <PasswordField layoutX="348.0" layoutY="213.0" prefWidth="200.0" />
+        <Button layoutX="277.0" layoutY="311.0" mnemonicParsing="false" text="Login" />
+        <Button layoutX="477.0" layoutY="312.0" mnemonicParsing="false" text="New User" />
+      </children>
+    </Pane>
+  </top>
 </BorderPane>
-
