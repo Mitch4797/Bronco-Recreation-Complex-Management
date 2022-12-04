@@ -22,7 +22,7 @@ import com.cpp.Brcm.BrcmApplicationJavaFX.StageReadyEvent;
 public class PrimaryStageInitializer implements ApplicationListener<StageReadyEvent> {
 
    // private final FxWeaver fxWeaver;
-    @Value("classpath:/HomePageController.fxml")
+    @Value("classpath:/FXML/LandingPageController.fxml")
 	private Resource homePageResource;
 	private String applicationTitle;
 	private ApplicationContext applicationContext;

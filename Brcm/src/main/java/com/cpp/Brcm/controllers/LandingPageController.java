@@ -1,4 +1,4 @@
-package com.cpp.Brcm;
+package com.cpp.Brcm.controllers;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.stereotype.Component;
 
@@ -12,8 +12,6 @@ import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-
-public class HomePageController {
+public class LandingPageController {
 
 }
-
