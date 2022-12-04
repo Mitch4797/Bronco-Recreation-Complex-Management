@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="277.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the BRIC," />
+            <Button layoutX="212.0" layoutY="234.0" mnemonicParsing="false" text="My Visits" />
+            <Button layoutX="480.0" layoutY="234.0" mnemonicParsing="false" text="Schedule Visits" />
+            <Button layoutX="212.0" layoutY="338.0" mnemonicParsing="false" text="Add Activity" />
+            <Button layoutX="480.0" layoutY="338.0" mnemonicParsing="false" text="Edit Activity" />
+            <Button layoutX="349.0" layoutY="471.0" mnemonicParsing="false" text="Sign Out" />
+            <Button layoutX="349.0" layoutY="402.0" mnemonicParsing="false" text="Generate Report" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="97.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciept for visit on: " />
+            <TableView layoutX="83.0" layoutY="94.0" prefHeight="291.0" prefWidth="317.0">
+              <columns>
+                <TableColumn prefWidth="172.0" text="Activity" />
+                <TableColumn prefWidth="144.0" text="Price" />
+              </columns>
+            </TableView>
+            <Text layoutX="478.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visit Total:" />
+            <Text layoutX="484.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount:" />
+            <Text layoutX="411.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total after Discount:" />
+            <Button layoutX="580.0" layoutY="347.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="142.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generated Report/Analysis" />
+            <Text layoutX="108.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+            <Text layoutX="345.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" />
+            <TextField layoutX="151.0" layoutY="105.0" />
+            <TextField layoutX="376.0" layoutY="105.0" />
+            <Button layoutX="320.0" layoutY="263.0" mnemonicParsing="false" text="Generate Report" />
+            <Button layoutX="572.0" layoutY="451.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

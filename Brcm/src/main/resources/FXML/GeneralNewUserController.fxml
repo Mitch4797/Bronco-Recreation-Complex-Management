@@ -11,12 +11,6 @@
    <center>
       <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <PasswordField layoutX="189.0" layoutY="122.0" />
-            <PasswordField layoutX="189.0" layoutY="177.0" />
-            <PasswordField layoutX="534.0" layoutY="177.0" />
-            <PasswordField layoutX="189.0" layoutY="233.0" prefHeight="31.0" prefWidth="532.0" />
-            <PasswordField layoutX="189.0" layoutY="285.0" />
-            <PasswordField layoutX="189.0" layoutY="332.0" />
             <Text layoutX="46.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
             <Text layoutX="46.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth" />
             <Text layoutX="46.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
@@ -27,6 +21,12 @@
             <Button layoutX="327.0" layoutY="468.0" mnemonicParsing="false" text="Student" />
             <Button layoutX="433.0" layoutY="468.0" mnemonicParsing="false" text="Professor" />
             <Button layoutX="566.0" layoutY="468.0" mnemonicParsing="false" text="Student Professor" />
+            <TextField layoutX="167.0" layoutY="122.0" />
+            <TextField layoutX="167.0" layoutY="177.0" />
+            <TextField layoutX="515.0" layoutY="177.0" />
+            <TextField layoutX="167.0" layoutY="234.0" prefHeight="31.0" prefWidth="448.0" />
+            <TextField layoutX="167.0" layoutY="286.0" />
+            <TextField layoutX="167.0" layoutY="344.0" />
          </children>
       </Pane>
    </center>

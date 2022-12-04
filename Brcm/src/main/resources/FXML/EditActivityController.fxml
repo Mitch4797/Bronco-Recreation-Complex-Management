@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="223.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="226.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+            <TextField layoutX="296.0" layoutY="104.0" />
+            <TextField layoutX="296.0" layoutY="179.0" />
+            <Text layoutX="350.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Activity" />
+            <Button layoutX="428.0" layoutY="449.0" mnemonicParsing="false" text="Confirm" />
+            <Button layoutX="594.0" layoutY="449.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

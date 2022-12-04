@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="256.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Student-Professor Registration" />
+            <Text layoutX="63.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+            <Text layoutX="62.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minor" />
+            <Text layoutX="62.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Office" />
+            <Text layoutX="63.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research" />
+            <Text layoutX="390.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graduation Date" />
+            <Text layoutX="415.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major" />
+            <Text layoutX="415.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+            <TextField layoutX="163.0" layoutY="93.0" />
+            <TextField layoutX="163.0" layoutY="154.0" />
+            <TextField layoutX="163.0" layoutY="207.0" />
+            <TextField layoutX="163.0" layoutY="263.0" />
+            <TextField layoutX="520.0" layoutY="94.0" />
+            <TextField layoutX="520.0" layoutY="154.0" />
+            <TextField layoutX="520.0" layoutY="206.0" />
+            <Button layoutX="368.0" layoutY="434.0" mnemonicParsing="false" text="Register" />
+            <Button layoutX="581.0" layoutY="434.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

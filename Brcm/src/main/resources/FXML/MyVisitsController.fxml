@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="362.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Visits" />
+            <TableView layoutX="214.0" layoutY="110.0" prefHeight="258.0" prefWidth="400.0">
+              <columns>
+                <TableColumn prefWidth="168.0" text="Visit" />
+                <TableColumn prefWidth="231.0" text="Timestamp" />
+              </columns>
+            </TableView>
+            <Button layoutX="221.0" layoutY="479.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="382.0" layoutY="479.0" mnemonicParsing="false" text="View Reciept" />
+            <Button layoutX="549.0" layoutY="479.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

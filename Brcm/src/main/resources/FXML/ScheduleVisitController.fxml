@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</BorderPane>
 
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="312.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Schedule Visit" />
+            <Text layoutX="54.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+            <Text layoutX="54.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" />
+            <TextField layoutX="116.0" layoutY="96.0" />
+            <TextField layoutX="116.0" layoutY="151.0" />
+            <TableView layoutX="231.0" layoutY="218.0" prefHeight="200.0" prefWidth="337.0">
+              <columns>
+                <TableColumn prefWidth="93.0" text="Check" />
+                <TableColumn prefWidth="115.0" text="Activity" />
+                  <TableColumn prefWidth="128.0" text="Price" />
+              </columns>
+            </TableView>
+            <Button layoutX="329.0" layoutY="487.0" mnemonicParsing="false" text="Confirm" />
+            <Button layoutX="524.0" layoutY="487.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
