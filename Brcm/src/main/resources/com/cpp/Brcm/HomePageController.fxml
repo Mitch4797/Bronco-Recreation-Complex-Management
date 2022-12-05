@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/2.2" 
+fx:controller = "com.cpp.Brcm.HomePageController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="800.0">
+      <children>
+        <Button layoutX="589.0" layoutY="113.0" mnemonicParsing="false" text="Continue" />
+        <Text layoutX="101.0" layoutY="76.0" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Bronco Recreational Complex Management" textAlignment="CENTER">
+          <font>
+            <Font name="Arial" size="24.0" />
+          </font>
+        </Text>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

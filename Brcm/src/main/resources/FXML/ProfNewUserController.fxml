@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpp.Brcm.controllers.ProfNewUserController">
+   <top>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="285.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Professor Registration" />
+            <Text layoutX="107.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+            <Text layoutX="107.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Office" />
+            <Text layoutX="107.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research" />
+            <TextField layoutX="202.0" layoutY="109.0" prefHeight="31.0" prefWidth="365.0" />
+            <TextField layoutX="202.0" layoutY="152.0" prefHeight="31.0" prefWidth="362.0" />
+            <TextField layoutX="202.0" layoutY="198.0" prefHeight="31.0" prefWidth="363.0" />
+            <Button layoutX="400.0" layoutY="430.0" mnemonicParsing="false" onAction="#RegisterbuttonClicked" text="Register" />
+            <Button layoutX="567.0" layoutY="430.0" mnemonicParsing="false" onAction="#HomebuttonClicked" text="Home" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
