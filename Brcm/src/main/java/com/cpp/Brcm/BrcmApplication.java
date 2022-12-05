@@ -3,23 +3,6 @@
   
   import org.springframework.boot.SpringApplication;  
 
-<<<<<<< HEAD
-
-
-@SpringBootApplication
-public class BrcmApplication  {
-
-	  
-	public static void main(String[] args) {
-		SpringApplication.run(BrcmApplication.class, args);
-		//System.out.println(Greeting.greeting());
-		//System.out.println();
-	}
-	
-	
-
-}
-=======
   import org.springframework.boot.autoconfigure.SpringBootApplication;
   import javafx.application.Application;
   
@@ -54,5 +37,4 @@ public class BrcmApplication  {
   
   }
   
-  
->>>>>>> cda194bb1eae013a39b8f964dd37ab9c340e35c3
+ 

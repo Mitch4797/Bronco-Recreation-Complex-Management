@@ -12,6 +12,6 @@ import com.cpp.Brcm.models.Customer;
 public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 	
 	Customer findCustomerByBroncoID(Integer broncoID);
-	Customer findCustomerByCust_Type(String cust_type);
+	//Customer findCustomerByCust_Type(String cust_type);
 	
 }

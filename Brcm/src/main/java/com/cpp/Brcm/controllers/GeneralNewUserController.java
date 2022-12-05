@@ -2,6 +2,9 @@ package com.cpp.Brcm.controllers;
 
 import java.io.IOException;
 
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -14,7 +17,8 @@ public class GeneralNewUserController {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
-	
+	Configuration cfg = new Configuration().configure("hibernate.cfg.xml");
+	SessionFactory sf = cfg.buildSessionFactory();
 
 	public void StudentbuttonClicked(ActionEvent event) throws IOException {
 		 root = FXMLLoader.load(getClass().getResource("/FXML/StudentNewUserController.fxml"));

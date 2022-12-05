@@ -35,7 +35,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -84,7 +83,6 @@
 			<version>3.4.1</version>
 		</dependency>
 
-=======
 		
 		<dependency>
     		<groupId>org.openjfx</groupId>
@@ -124,7 +122,6 @@
 		</dependency>
 
 
->>>>>>> cda194bb1eae013a39b8f964dd37ab9c340e35c3
 	</dependencies>
 
 	<build>
